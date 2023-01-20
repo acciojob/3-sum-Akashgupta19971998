@@ -3,8 +3,8 @@ function threeSum(arr, target) {
 let n = arr.length;
         let i = 0;
         let closestSum = arr[0] + arr [1] + arr[n-1];   //Initially closestSum = initial triplet sum
-        sort(arr.begin(),arr.end());
-		// arr.sort();
+        // sort(arr.begin(),arr.end());
+		arr.sort();
         while(i < n -2){
             let j = i+1;
             let k = n-1;         
