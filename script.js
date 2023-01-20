@@ -12,7 +12,7 @@ let n = arr.length;
                 let sum = arr[i] + arr[j] + arr[k] ;
                 if(sum == target)               //if triplet sum becomes equal to target, then that is the closestSum itself
                     return sum;
-                if (abs(target - sum) < abs(target - closestSum)){
+                if ((target - sum) <(target - closestSum)){
                     closestSum = sum;       //if sum of current triplet is closer than target than the previous closestSum,
 				}                                        //we update the closestSum value to the current triplet sum
                 if(sum > target)
